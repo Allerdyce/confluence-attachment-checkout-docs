@@ -1,0 +1,58 @@
+name: EvidencePair LLC Support Request
+description: Submit a support, troubleshooting, or compliance inquiry for this Atlassian Forge application (24-Hour SLA).
+title: "[Support]: "
+labels: ["support-request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### EvidencePair LLC — Enterprise Customer Support
+        Thank you for contacting **EvidencePair LLC Support**. We respond to all support requests within our **24-hour business SLA window** (`support@evidencepair.com` / `support@titlecovenant.com`).
+        > **Security & Privacy Reminder:** All EvidencePair LLC applications are **100% Runs on Atlassian** (`nodejs24.x`, zero external remotes, zero data egress). Please **do not** include raw customer PII, API tokens, or credentials in this public issue form.
+
+  - type: input
+    id: site_domain
+    attributes:
+      label: Atlassian Site Domain (Optional)
+      description: Your Atlassian Cloud tenant domain (leave blank if you prefer not to share publicly).
+      placeholder: "example.atlassian.net"
+    validations:
+      required: false
+
+  - type: input
+    id: app_version
+    attributes:
+      label: App Version
+      description: The installed Marketplace version or build number of the app (found in Manage Apps).
+      placeholder: "e.g., 3.1.0 (Build 3001000) or 1.0.0"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Environment
+      description: Select the Atlassian Cloud host product where the app is installed.
+      options:
+        - Jira
+        - JSM
+        - Confluence
+    validations:
+      required: true
+
+  - type: textarea
+    id: description_diagnostics
+    attributes:
+      label: Description / Diagnostic JSON
+      description: Describe the issue, steps to reproduce, expected behavior, and paste any redacted diagnostic JSON or audit export snippet if applicable.
+      placeholder: |
+        Steps to reproduce:
+        1. ...
+        2. ...
+
+        Diagnostic JSON (optional, redacted):
+        {
+          "status": "..."
+        }
+    validations:
+      required: true
