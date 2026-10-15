@@ -61,7 +61,7 @@ jobs:
               ``,
               `### ⏱️ 24-Hour Support SLA & Next Steps`,
               `- **SLA Commitment:** An EvidencePair LLC support engineer will review your diagnostic details and respond within our **24-hour business SLA window** (Monday–Friday).`,
-              `- **Direct Escalation & Private Diagnostics:** If you need to share tenant-specific screenshots or sensitive configuration details privately, please email **\`support@evidencepair.com\`** (or **\`support@titlecovenant.com\`**) and reference **\`${repo}#${issueNumber}\`** in the subject line.`,
+              `- **Direct Escalation & Private Diagnostics:** If you need to share tenant-specific screenshots or sensitive configuration details privately, please email **\`support@evidencepair.com\`** (fallback: **\`support@titlecovenant.com\`**) and reference **\`${repo}#${issueNumber}\`** in the subject line.`,
               ``,
               `### 📚 Self-Service Documentation & Architecture Reference`,
               `While your ticket is being reviewed, please consult our official documentation for setup checklists, permission requirements, and zero-egress architecture specifications:`,
