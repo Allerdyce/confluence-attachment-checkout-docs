@@ -26,7 +26,9 @@ Built from the ground up on **Atlassian Forge** (`nodejs24.x` runtime, Forge SQL
 ## Documentation Links
 
 - **[User & Administrator Guide](./USER_GUIDE.md)** — Installing, configuring space governance, checking files out/in, force-releasing locks, and exporting CSV audits.
-- **[Privacy, Security & Runs on Atlassian Architecture](./PRIVACY_AND_SECURITY.md)** — Zero-egress declaration, Forge SQL data residency, permission scopes, and personal-data lifecycle.
+- **[Privacy Policy](./PRIVACY_POLICY.md)** — What the app stores and reads, who can see it, how long it is kept, and what happens when an account is closed.
+- **[Security](./SECURITY.md)** — Data handling, each permission scope's use, encryption, vulnerability reporting, and certifications.
+- **[Privacy, Security & Runs on Atlassian Architecture](./PRIVACY_AND_SECURITY.md)** — Technical summary: zero-egress declaration, where data is stored, permission checks, and personal data.
 - **[End-User License Agreement (EULA)](./EULA.md)** — Standard commercial terms for EvidencePair LLC Marketplace apps.
 - **[Marketplace Listing Copy & Highlights](./LISTING_COPY.md)** — Full Marketplace overview, highlights, and positioning.
 - **[Pricing Table](./PRICING_TABLE.md)** — Progressive per-user monthly Cloud pricing tiers.
@@ -36,5 +38,6 @@ Built from the ground up on **Atlassian Forge** (`nodejs24.x` runtime, Forge SQL
 ## Support & Vendor Contact
 
 - **Vendor:** EvidencePair LLC
-- **Support:** `support@titlecovenant.com`
+- **Support:** <https://evidencepair.com/support/> (support@evidencepair.com); we reply within one business day
+- **Security reports:** security@evidencepair.com
 - **Documentation Repository:** <https://github.com/Allerdyce/confluence-attachment-checkout-docs>
