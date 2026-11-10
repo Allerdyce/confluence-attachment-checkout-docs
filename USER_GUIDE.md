@@ -67,3 +67,16 @@ Open **Apps → Attachment Checkout for Confluence** from the top Confluence nav
 - **All active checkouts (Confluence Admins):** Filter active locks across the entire site by **Space key**, **Holder accountId**, or **Mode** (`advisory` / `enforced`).
 - **My checkouts (All Signed-In Users):** View and check in all attachments you currently hold across every space.
 - **Export CSV:** Click **Export CSV** to download a UTF-8 BOM CSV snapshot (`aco-active-locks-YYYY-MM-DD.csv`) containing `spaceKey`, `pageId`, `attachmentId`, `holder`, `mode`, `checkedOutAt`, `expiresAt`, `versionAtCheckout`, and `note`—ready for ISO 27001 / SOC 2 document-control evidence.
+
+---
+
+## 7. When Someone's Atlassian Account Is Closed
+
+Updated 10 November 2026.
+
+Once an hour, the app tells Atlassian which account IDs it stores. When Atlassian says one of those accounts has been closed:
+- That person's active checkouts are released, the same way an expiry releases them. In Enforced mode, the page's restrictions go back as they would at expiry. No notice is posted, because nobody would read it.
+- Checkout history shows **erased-account** where it showed that person's account ID, and a checkout released this way shows **system:account-closed** as who ended it.
+- Comments already posted on the **Checkout notifications** page stay. They belong to Confluence, and people with permission can delete them like any other comment.
+
+The [privacy policy](./PRIVACY_POLICY.md#account-closure) lists everything the app erases and what it leaves.
